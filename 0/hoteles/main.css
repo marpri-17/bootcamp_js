@@ -1,0 +1,70 @@
+body {
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.hotel-header {
+  text-align: center;
+}
+.hotel-item {
+  border: 1px solid #dcdcdc;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+  padding: 20px;
+  border-radius: 3px;
+}
+
+.hotel-name {
+  text-transform: uppercase;
+  font-weight: 700;
+  padding-right: 2%;
+}
+
+.hotel-description {
+  padding: 15px;
+  text-transform: lowercase;
+}
+
+.responsive {
+  max-width: 50%;
+  width: 100px;
+  height: auto;
+}
+
+.hotel-number {
+  min-width: 180px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.stars-container {
+  direction: rtl;
+  unicode-bidi: bidi-override;
+  min-width: 150px;
+}
+
+.stars-container > label {
+  color: #9b9b9b;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.stars-container > label:hover,
+.stars-container > label:hover ~ label {
+  color: #c9e9fc;
+  text-shadow: inset 1px 1px 1px 1px black;
+}
+
+.stars-container > input[type="radio"] {
+  display: none;
+  padding-right: 20px;
+}
+
+.stars-container > input[type="radio"]:checked ~ label {
+  color: #c9e9fc;
+}
+
+.stars-container > span :active {
+  color: #a5a3e4;
+}
