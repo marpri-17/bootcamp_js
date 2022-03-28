@@ -1,0 +1,96 @@
+body {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.hotel-header {
+    text-align: center;
+}
+
+.hotel-body {
+    padding: 10px;
+}
+
+.hotel-item {
+    border: 1px solid #dcdcdc;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+    padding: 16px;
+    border-radius: 3px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.35s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.hotel-item:hover {
+    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.25), 0 6px 10px rgba(0, 0, 0, 0.22);
+}
+
+.hotel-name-container {
+    max-width: 300px;
+}
+
+.hotel-name {
+    text-transform: uppercase;
+    font-weight: 700;
+    padding-right: 2%;
+}
+
+.hotel-location {
+    text-transform: uppercase;
+    font-weight: 500;
+    padding-top: 1rem;
+}
+
+.responsive {
+    max-width: 50%;
+    width: 100px;
+    height: auto;
+}
+
+.hotel-description {
+    max-width: 10%;
+    text-align: center;
+    text-transform: lowercase;
+}
+
+.hotel-number {
+    padding-right: 5px;
+    min-width: 20%;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.stars-container {
+    direction: rtl;
+    unicode-bidi: bidi-override;
+    min-width: 60px;
+}
+
+.stars-container>label {
+    color: #9b9b9b;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.stars-container>label:hover {
+    color: #fadda7;
+    text-shadow: inset 1px 1px 1px 1px black;
+}
+
+.stars-container>label:hover~label {
+    color: #fadda7;
+}
+
+.stars-container>input[type="radio"] {
+    display: none;
+    padding-right: 20px;
+}
+
+.stars-container>input[type="radio"]:checked~label {
+    color: #ffa500;
+}
+
+.stars-container>span:active {
+    color: #ffa500;
+}
