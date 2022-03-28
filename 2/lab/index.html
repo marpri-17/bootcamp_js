@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoteles</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <header class="hotel-header">
+        <h1>Reseñas de hoteles</h1>
+    </header>
+    <section class="hotel-body">
+        <article class="hotel-item" id="item1">
+            <div class="hotel-description">
+                <span id="hotel-name" class="hotel-name">Hotel Desconocido</span>
+                <span id="hotel-location" class="hotel-location">Desconocido</span>
+                <img id="hotel-picture" class="hotel-picture" alt="Imagen del hotel escogido">
+            </div>
+            <div class="hotel-valoration">
+                <div class="hotel-valoration-ranking">
+                    <span>Puntuación: </span> <span id="stars-ranking" class="hotel-user-valoration"></span><span class="item1-star1">&#9733;</span>
+                </div>
+                <label for="anonimous-review">Reseña anónima: </label>
+                <input id="anonimous-review-check" type="checkbox" name="anonimous-review" disabled/>
+            </div>
+    </section>
+
+    <script src="./app.js"></script>
+</body>
+</html>
