@@ -49,7 +49,6 @@ body {
 }
 
 .hotel-description {
-    max-width: 10%;
     text-align: center;
     text-transform: lowercase;
 }
@@ -60,3 +59,8 @@ body {
     font-size: 22px;
     font-weight: 700;
 }
+
+.stars span {
+    color: chocolate;
+    font-size: 20px;
+  }
