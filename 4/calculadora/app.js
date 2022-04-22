@@ -1,9 +1,5 @@
 "use strict";
 
-/**
- * Calculadora secuencial
- */
-
  const operation = {
     type: null,
     operator1: 0,
@@ -18,7 +14,6 @@ const number1 = document.getElementById('number1');
 const number2 = document.getElementById('number2');
 const resultContainer = document.getElementById('resultContainer');
 const resultElement = document.getElementById('result');
-const resultRestElement = document.getElementById('rest');
 const resultErrorElement = document.getElementById('resultError');
 
 // Core Functions
@@ -79,23 +74,4 @@ function printError() {
     toggleHidden(resultErrorElement);
     toggleHidden(resultContainer);
 
-}
-
-
-function getOperationBySign(sign){
-    switch (sign) {
-        case '+':
-            return 'sum'
-        case '-':
-            return 'minus'
-        case 'x':
-        case 'X':
-        case '*':
-            return 'multiply'
-        case '/':
-        case '\\':
-            return 'divide'
-        default:
-            return 'ERROR';
-    }
 }

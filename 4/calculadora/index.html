@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,29 +8,35 @@
     <title>Calculadora</title>
     <link rel="stylesheet" href="./app.css">
 </head>
+
 <body>
-    <section class="header_container">
-        <h1>Calculadora JS</h1>
-    </section>
-    <section class="body_container">
-        <input type="text" id="number1" class="cal_input">
-        <input type="text" id="number2" class="cal_input">
-    </section>
-    <section class="actions_container">
-        <button class="actions_plus" onclick="onClickOperation('sum')">+</button>
-        <button class="actions_minus" onclick="onClickOperation('minus')">-</button>
-        <button class="actions_multiply" onclick="onClickOperation('multiply')">X</button>
-        <button class="actions_divide" onclick="onClickOperation('divide')">/</button>
-    </section>
-    <section class="result_container">
-        <p class="resultContainer" id="resultContainer">
-            <span id="result" class="result">El resultado se mostrará aquí!</span> <span  id="rest" class="rest"></span>
-        </p>
-        <p id="resultError" class="result_error hide">Error</p>
+    <section class="calculator-container">
+        <article class="calculator">
+            <article class="header_container">
+                <h1 class="header">Calculadora JS</h1>
+            </article>
+            <article class="input_container">
+                <input type="text" id="number1"/>
+                <input type="text" id="number2"/>
+            </article>
+            <article class="actions_container">
+                <button class="actions_plus" onclick="onClickOperation('sum')">+</button>
+                <button class="actions_minus" onclick="onClickOperation('minus')">-</button>
+                <button class="actions_multiply" onclick="onClickOperation('multiply')">X</button>
+                <button class="actions_divide" onclick="onClickOperation('divide')">/</button>
+            </article>
+            <article class="result_container">
+                <p class="resultContainer" id="resultContainer">
+                    <span id="result" class="result">El resultado se mostrará aquí!</span>
+                </p>
+                <p id="resultError" class="result_error hide">Error</p>
+            </article>
+        </article>
     </section>
     <section class="footer_container">
         <p class="footer_inscription">LemonCode JS Bootcamp</p>
     </section>
     <script src="./app.js"></script>
 </body>
+
 </html>
