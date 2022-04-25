@@ -51,8 +51,8 @@ function onClickOperation(operationType) {
         toggleHidden(resultContainer)
     }
     // Check input values is number
-    let firstNumber = isNaN(number1.value) ? null : +number1.value;
-    let secondNumber = isNaN(number2.value) ? null : +number2.value;
+    let firstNumber = isNaN(number1.value) || number1.value === '' ? null : +number1.value;
+    let secondNumber = isNaN(number2.value) || number2.value === '' ? null : +number2.value;
     if (firstNumber && secondNumber) {
         operation.operator1 = firstNumber;
         operation.operator2 = secondNumber;
